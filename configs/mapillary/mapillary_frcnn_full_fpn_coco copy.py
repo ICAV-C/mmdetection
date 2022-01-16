@@ -10,7 +10,7 @@ classes = ['other-sign', 'regulatory--stop--g1', 'regulatory--keep-left--g1', 'c
 #classes = ['warning--pedestrians-crossing--g10','regulatory--one-way-straight--g1','information--road-bump--g1','information--parking--g45','regulatory--no-parking--g2','regulatory--one-way-left--g3','regulatory--one-way-right--g3','information--highway-exit--g1','complementary--keep-left--g1','complementary--keep-right--g1','regulatory--maximum-speed-limit-led-60--g1','warning--roadworks--g6','warning--pedestrians-crossing--g12','warning--pedestrians-crossing--g9','complementary--maximum-speed-limit-40--g1','complementary--maximum-speed-limit-50--g1','warning--railroad-crossing-with-barriers--g2','regulatory--maximum-speed-limit-90--g1','warning--bus-stop-ahead--g3','information--airport--g2','complementary--maximum-speed-limit-70--g1','complementary--chevron-left--g5','complementary--chevron-right--g6','warning--traffic-signals--g4','regulatory--roundabout--g2','regulatory--yield--g1','warning--kangaloo-crossing--g1']
 model = dict(
     roi_head=dict(
-        bbox_head=dict(num_classes=len(classes)-1)))
+        bbox_head=dict(num_classes=len(classes))))
 
 # Modify dataset related settings
 dataset_type = 'COCODataset'
